@@ -14,13 +14,11 @@
 <div id="invitation" class="flipbook-viewport" style="display: none;">
 	<div class="container">
 		<div class="flipbook">
-			<div class="page" style="background-image:url(pages/1.jpg)"></div>
-			<div class="double" style="background-image:url(pages/2.jpg)"></div>
-			<div class="double" style="background-image:url(pages/3.jpg)"></div>
-			<div class="double" style="background-image:url(pages/4.jpg)"></div>
-			<div class="double" style="background-image:url(pages/5.jpg)"></div>
-			<div class="double" style="background-image:url(pages/6.jpg)"></div>
-			<div class="page" style="background-image:url(pages/7.jpg)"></div>
+			<div class="page" style="background-image:url(pages/FrontPage.jpg)"></div>
+			<div class="double" style="background-image:url(pages/SecondPage.jpg)"></div>
+			<div class="double" style="background-image:url(pages/ThirdPage.jpg)"></div>
+			<div class="double" style="background-image:url(pages/FourthPage.jpg)"></div>
+			<div class="page" style="background-color: #000"></div>
 		</div>
 	</div>
 </div>
@@ -32,6 +30,8 @@
 	  </audio>
 	  <br>
 	  <span>Please play the audio to continue</span>
+	  <br>
+	  <span>and use landscape mode when using mobile phone</span>
 </div>
 
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 	myMusic.onplay = function() {
 		$('#audioPlace').fadeOut(1000);
-		$('#invitation').fadeIn(1000);
+		$('#invitation').fadeIn(1000	);
 	}
 	//myMusic.play();
 });
